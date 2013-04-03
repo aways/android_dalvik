@@ -549,6 +549,7 @@ void dvmFreeVfyBasicBlocks(VerifierData* vdata)
             continue;
 
         dvmPointerSetFree(block->predecessors);
+        dvmFreeBitVector(block->liveRegs);
         free(block);
     }
 }
