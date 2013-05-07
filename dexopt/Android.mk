@@ -24,8 +24,7 @@ local_src_files := \
 local_c_includes := \
 		dalvik \
 		dalvik/libdex \
-		dalvik/vm \
-		$(JNI_H_INCLUDE)
+		dalvik/vm
 
 local_shared_libraries := \
 		libssl \
